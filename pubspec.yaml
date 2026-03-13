@@ -1,0 +1,33 @@
+name: music_app
+description: "A professional Music and News application for Visual Harmony."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  
+  # Audio playback functionality
+  audioplayers: ^5.2.1
+
+  # API data fetching
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  # This ensures the Material Design icons and styles work correctly
+  uses-material-design: true
+
+  # This is the most critical part for your audio to work. 
+  # Ensure the file is physically located at: your_project/assets/audio/neon_dreams.mp3
+  assets:
+    - assets/audio/neon_dreams.mp3
